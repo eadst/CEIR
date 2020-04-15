@@ -1,5 +1,10 @@
-#!/usr/bin/env python2
-#encoding: UTF-8
+# -*- coding: utf-8 -*-
+'''
+Stage 2: detection
+Last time for updating: 04/15/2020
+'''
+
+
 import json
 import sys;sys.path.append('./')
 import zipfile

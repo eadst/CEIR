@@ -1,3 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 1/17/19 2:09 AM
-# @Author  : zhoujun
+'''
+Stage 2: detection
+Last time for updating: 04/15/2020
+'''

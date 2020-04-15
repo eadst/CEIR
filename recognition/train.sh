@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+# Stage 3: recognition
+# Last time for updating: 04/15/2020
+
 set -x
 
 for i in 2,0.2,1.5;do

@@ -16,7 +16,7 @@ The `pytorch` implementation of recognition is based on [CRNN](https://github.co
 We validate our system with the scanned receipts optical character recognition and information extraction (SROIE) [database](https://drive.google.com/drive/folders/1ShItNWXyiY1tFDM5W02bceHuJjyeeJl2).
 
 ## Dependency
-
+Python 3.6.3
 1. torch==1.4
 2. torchvision
 3. opencv-python
@@ -24,16 +24,19 @@ We validate our system with the scanned receipts optical character recognition a
 
 ## Prediction
 
-1. Download pre-trained model from [Google Drive](w) and put the file under `./detection/output/` folder. 
+1. Download pre-trained model from [Google Drive](https://drive.google.com/file/d/1hQzbaJgqnu5jNuv80MpXx2eEVOe3vK5O/view?usp=sharing) and put the file under `./detection/output/` folder. 
 
-2. Run `python demo.py` in CEIR folder.
+2. Change the image name to `demo.jpg` in CEIR folder.
+* Run `python ceir_crop.py` for stage 1.
+* Run `python ceir_detect.py` for stage 2.
+* Run `python ceir_recognize.py` for stage 3.
 
-3. Select the receipt image.
-
-4. The result will be saved in `./result/`.
+3. The result will be saved in `./result/`.
 
 
 ## Training
+
+Put dataset in `./dataset/train/image` and `./dataset/train/label`.
 
 1. Preprocess parameters can be changed in `./preprocess/crop.py`.
 

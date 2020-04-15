@@ -1,5 +1,8 @@
-#!/usr/bin/python
-# encoding: utf-8
+# -*- coding: utf-8 -*-
+'''
+Stage 3: recognition
+Last time for updating: 04/15/2020
+'''
 
 import torch
 import torch.nn as nn

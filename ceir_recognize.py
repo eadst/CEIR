@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+'''
+Stage 3: recognition for predicting
+Last time for updating: 04/15/2020
+'''
+
+
 import torch
 import os, sys, time
 from torch.autograd import Variable
@@ -39,8 +46,6 @@ def predict_this_box(image, model, alphabet):
     preds_size = Variable(torch.IntTensor([preds.size(0)]))
     raw_pred = converter.decode(preds.data, preds_size.data, raw=True)
     sim_pred = converter.decode(preds.data, preds_size.data, raw=False)
-    # print(preds.data)
-    # print('%-30s ==> %-30s' % (raw_pred, sim_pred))
     return sim_pred
 
 
@@ -74,7 +79,7 @@ def load_images_to_predict(image_path, label_path):
         box = line.split(',')
         crop_image = image.crop((int(box[0]), int(box[1]), int(box[4]), int(box[5])))
         words = predict_this_box(crop_image, model, alphabet)
-        words_list.append(words)
+        words_list.append(words.upper())
     result_path = os.path.join(main_path, 'result/step3/')
     save_path = result_path + image_path.split('/')[-1][:-3] + 'txt'
     cost_time = (time.time() - start)

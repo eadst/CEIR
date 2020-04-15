@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2019/1/3 17:40
-# @Author  : zhoujun
+'''
+Stage 2: detection
+Last time for updating: 04/15/2020
+'''
+# @Time    : 2018/6/11 15:54
+# @Original Author  : zhoujun
 
-# train config
 gpu_id = '0'
 workers = 12
 start_epoch = 0

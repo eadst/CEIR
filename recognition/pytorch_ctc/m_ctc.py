@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+'''
+Stage 3: recognition
+Last time for updating: 04/15/2020
+'''
 import os
 # os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"   # see issue #152
 # os.environ["CUDA_VISIBLE_DEVICES"]="2"

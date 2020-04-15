@@ -1,9 +1,13 @@
-# -*- coding:utf-8 -*-
-# '''
+# -*- coding: utf-8 -*-
+'''
+Stage 2: detection
+Last time for updating: 04/15/2020
+'''
+
 # Created on 18-12-27 上午10:34
 #
 # @Author: Greg Gao(laygin)
-# '''
+
 
 import os
 import glob

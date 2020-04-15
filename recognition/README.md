@@ -1,3 +1,8 @@
+In text recognition, the convolutional recurrent neural network with the connectionist temporal classification with maximum entropy regularization as a loss function to update the weights in networks and extract the characters from receipt. 
+The `pytorch` implementation of recognition is based on [CRNN](https://github.com/meijieru/crnn.pytorch) and [ENESCTC](https://github.com/liuhu-bigeye/enctc.crnn).
+
+Here is their the CRNN introduction.
+
 # Scanned Receipt OCR by Convolutional-Recurrent Neural Network
 
 This is a `pytorch` implementation of CRNN, which is based on @meijieru's repository [here](https://github.com/meijieru/crnn.pytorch).

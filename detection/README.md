@@ -1,5 +1,9 @@
-# Detecting Text in Natural Image with Connectionist Text Proposal Network
+In text detection, the modified connectionist text proposal network to execute text detection. 
+The `pytorch` implementation of detection is based on [CTPN](https://github.com/WenmuZhou/ctpn.pytorch).
 
+Here is their the CTPN introduction.
+
+# Detecting Text in Natural Image with Connectionist Text Proposal Network
 ## Requirements
 * pytorch 1.0
 * opencv3

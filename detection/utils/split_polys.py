@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+'''
+Stage 2: detection
+Last time for updating: 04/15/2020
+'''
+
 # @Time    : 2019/5/10 14:22
 # @Author  : zhoujun
 import numpy as np
