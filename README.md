@@ -1,11 +1,17 @@
 # CEIR
 This project is for the SPIE paper - Novel Receipt Recognition with Deep Learning Algorithms.
 In this paper, we propose an end-to-end novel receipt recognition system for capturing effective information from receipts (CEIR).
+
+CEIR system demo is available at:
+[CEIR Demo](http://eadst.com/ceir)
+
+![](http://www.eadst.com/media/upload/2020/04/CEIR_DEMO_2.png)
+
 The CEIR has three parts: preprocess, detection, recognition.
 
 ## Introduction
 
-In preprocessing method, by converting the image to gray scale and obtaining the gradient with the Sobel operator, the outline of the receipt area is decided by morphological transformations with the elliptic kernel. 
+In the preprocessing method, by converting the image to gray scale and obtaining the gradient with the Sobel operator, the outline of the receipt area is decided by morphological transformations with the elliptic kernel. 
 
 In text detection, the modified connectionist text proposal network to execute text detection. 
 The `pytorch` implementation of detection is based on [CTPN](https://github.com/WenmuZhou/ctpn.pytorch).
@@ -26,7 +32,7 @@ Python 3.6.3
 
 1. Download pre-trained model from [Google Drive](https://drive.google.com/file/d/1hQzbaJgqnu5jNuv80MpXx2eEVOe3vK5O/view?usp=sharing) and put the file under `./detection/output/` folder. 
 
-2. Change the image name to `demo.jpg` in CEIR folder.
+2. Change the image name to `demo.jpg` in the CEIR folder.
 * Run `python ceir_crop.py` for stage 1.
 * Run `python ceir_detect.py` for stage 2.
 * Run `python ceir_recognize.py` for stage 3.
@@ -36,12 +42,10 @@ Python 3.6.3
 
 ## Training
 
-Put dataset in `./dataset/train/image` and `./dataset/train/label`.
+0. Put dataset in `./dataset/train/image` and `./dataset/train/label`.
 
 1. Preprocess parameters can be changed in `./preprocess/crop.py`.
 
-2. In detection part, the `./detection/config.py` is used for configuring. After that, run `python train.py` in detection folder.
-
-Preprocess parameters can be changed in `./preprocess/crop.py`.
+2. In the detection part, the `./detection/config.py` is used for configuring. After that, run `python train.py` in the detection folder.
 
 3. In recognition, you need to change trainroot and other parameters in `train.sh`, then run `sh train.sh` to train.
